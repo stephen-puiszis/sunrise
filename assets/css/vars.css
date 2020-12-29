@@ -35,4 +35,13 @@
     --height: 4rem;
     --margin: 2rem;
     --radius: 0.5rem;
+
+    /* Footer */
+    --footer-spacing: 5vmin;
+    --footer-font-lg: 1.8rem;
+    --footer-font-md: 1.6rem;
+
+
+    /* Icons */
+    --icon-size: 1.8rem;
 }
