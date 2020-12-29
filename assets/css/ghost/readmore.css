@@ -4,6 +4,7 @@
 .gh-readmore {
     padding: 8vmin 4vmin;
     font-size: 2.6rem;
+    border-top: solid 1px var(--color-grey);
 }
 
 .gh-readmore-inner {
@@ -19,11 +20,13 @@
 
 .gh-readmore a {
     display: flex;
+    align-items: center;
     color: currentColor;
     text-decoration: none;
 }
 
 .gh-readmore h4 {
+    margin: 0 3vmin;
     width: 100%;
     font-size: inherit;
 }
@@ -33,11 +36,6 @@
     vertical-align: middle;
     height: 1em;
     margin: 0.15em 0 0;
-}
-
-.gh-readmore svg + h4,
-.gh-readmore h4 + svg {
-    margin-left: 2vmin;
 }
 
 @media (max-width: 700px) {
