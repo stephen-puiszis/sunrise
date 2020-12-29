@@ -13,6 +13,7 @@ production stylesheet in assets/built/screen.css using: gulp dev
 @import "components/global.css";
 @import "components/forms.css";
 @import "components/buttons.css";
+@import "components/post.css";
 
 /* Ghost components */
 @import "ghost/header.css";
@@ -71,7 +72,7 @@ html,
 }
 
 .gh-head-actions a svg {
-    height: 1.8rem;
+    height: var(--icon-size);
     fill: currentcolor;
 }
 
@@ -189,39 +190,6 @@ html,
     .gh-page-head > p {
         font-size: 1.6rem;
     }
-}
-
-
-/* Post
-/* ---------------------------------------------------------- */
-
-.gh-header {
-    padding: 0 0 8vmin 0;
-    text-align: center;
-}
-
-.gh-post-meta {
-    display: block;
-    margin: 0 0 1rem;
-    font-size: 1.4rem;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    opacity: 0.8;
-}
-
-.gh-excerpt {
-    margin: 1rem 0 0 0;
-    font: var(--font-sans-serif);
-}
-
-.gh-feature-image {
-    grid-column: wide-start / wide-end;
-    width: 100%;
-    margin: 8vmin 0 0;
-}
-
-.gh-post-footer {
-    margin: 2rem 0;
 }
 
 
