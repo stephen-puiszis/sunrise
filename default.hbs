@@ -38,9 +38,10 @@
         </div>
         <div class="gh-head-actions">
             <div class="gh-head-actions-list">
-                {{#if @site.facebook}}
-                <a href="{{facebook_url @site.facebook}}" title="Facebook" target="_blank" rel="noopener">{{> "icons/facebook"}}</a>
-                {{/if}}
+                {{!-- Ghost configuration is pretty stupid and isn't straightforward; hardcoding isn't ideal but c'e la vie --}}
+                <a href="https://www.linkedin.com/in/stephenpuiszis/" title="LinkedIn" target="_blank" rel="noopener">{{> "icons/linkedin"}}</a>
+                <a href="https://github.com/stephen-puiszis" title="Github" target="_blank" rel="noopener">{{> "icons/github"}}</a>
+                <a href="https://github.com/stephen-puiszis" title="Github" target="_blank" rel="noopener">{{> "icons/instagram"}}</a>
                 {{#if @site.twitter}}
                 <a href="{{twitter_url @site.twitter}}" title="Twitter" target="_blank" rel="noopener">{{> "icons/twitter"}}</a>
                 {{/if}}

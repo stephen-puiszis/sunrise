@@ -1,10 +1,53 @@
-# Ghost Starter Theme
+# Sunrise Ghost Theme
+# Development
 
-A starter framework for Ghost themes! Fork this repository and start your development here with all the main things you need to develop a custom Ghost theme.
+Styles are compiled using Gulp/PostCSS to polyfill future CSS spec. You'll need [Node](https://nodejs.org/), [Yarn](https://yarnpkg.com/) and [Gulp](https://gulpjs.com) installed globally. After that, from the theme's root directory:
+
+```bash
+# Install
+yarn
+
+# Run build & watch for changes
+yarn dev
+```
+
+Now you can edit `/assets/css/` files, which will be compiled to `/assets/built/` automatically.
+
+The `zip` Gulp task packages the theme files into `dist/<theme-name>.zip`, which you can then upload to your site.
+
+```bash
+yarn zip
+```
+
+### Local Ghost Server Setup for Development
+
+Follow the [official Ghost local installation guide](https://ghost.org/docs/install/local/) to install Ghost.
+
+Run `ghost start` to start the local Ghost instance that will be available at http://localhost:2368
+
+Run `ghost run --development` to tail the logs of the running Ghost instance.
 
 &nbsp;
 
-# First time using a Ghost theme?
+### Configuration
+
+Ghost template configuration sucks. The variables defined in package.json get filtered out, and
+I haven't found a way to quickly inject variables from the admin interface so there is some hardcoded
+content throughout.
+
+#### SVG Icons
+
+Makes use of [Simple Icons](https://simpleicons.org/) and [Apple SF Symbols](https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overview/).
+
+####  PostCSS Features Used
+
+- Autoprefixer - Don't worry about writing browser prefixes of any kind, it's all done automatically with support for the latest 2 major versions of every browser.
+- [Color Mod](https://github.com/jonathantneal/postcss-color-mod-function)
+
+&nbsp;
+
+
+# Boilerplate Ghost Content
 
 Ghost uses a simple templating language called [Handlebars](http://handlebarsjs.com/) for its themes.
 
@@ -26,36 +69,3 @@ One neat trick is that you can also create custom one-off templates just by addi
 - `author-ali.hbs` - Custom template for `/author/ali/` archive
 
 &nbsp;
-
-# Development
-
-Styles are compiled using Gulp/PostCSS to polyfill future CSS spec. You'll need [Node](https://nodejs.org/), [Yarn](https://yarnpkg.com/) and [Gulp](https://gulpjs.com) installed globally. After that, from the theme's root directory:
-
-```bash
-# Install
-yarn
-
-# Run build & watch for changes
-yarn dev
-```
-
-Now you can edit `/assets/css/` files, which will be compiled to `/assets/built/` automatically.
-
-The `zip` Gulp task packages the theme files into `dist/<theme-name>.zip`, which you can then upload to your site.
-
-```bash
-yarn zip
-```
-
-&nbsp;
-
-# PostCSS Features Used
-
-- Autoprefixer - Don't worry about writing browser prefixes of any kind, it's all done automatically with support for the latest 2 major versions of every browser.
-- [Color Mod](https://github.com/jonathantneal/postcss-color-mod-function)
-
-&nbsp;
-
-# Copyright & License
-
-Copyright (c) 2013-2020 Ghost Foundation - Released under the [MIT license](LICENSE).
