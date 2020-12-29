@@ -52,6 +52,9 @@ html,
 
 .gh-postfeed {
     padding: 8vmin 0;
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .gh-container {
@@ -83,20 +86,30 @@ html,
 /* Index
 /* ---------------------------------------------------------- */
 
-.gh-card:not(:first-child) {
+/* .gh-card:not(:first-child) {
+    margin: 8vmin auto 0;
+} */
+
+.gh-card {
     margin: 8vmin auto 0;
 }
 
 .gh-card-link {
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+
+.gh-card.no-image {
+    padding-right: 200px;
 }
 
 .gh-card-image {
-    width: 100%;
-    max-height: 700px;
-    object-fit: cover;
     margin-bottom: 4vmin;
+    width: 200px;
+    height: 180px;
+    object-fit: cover;
+    flex-shrink: 0;
 }
 
 .gh-card-meta {
@@ -111,14 +124,13 @@ html,
 
 .gh-card-content {
     max-width: 720px;
-    margin: 0 auto;
-    text-align: center;
+    text-align: left;
     font-size: 1.6rem;
 }
 
 .gh-card-content p {
     margin: 1.2rem 0;
-    padding: 0 6vmin;
+    padding: 1vmin 0;
 }
 
 .gh-card-content > strong {
@@ -127,6 +139,27 @@ html,
     font-weight: 500;
     box-shadow: 0 -1px 0 0 inset currentColor;
     opacity: 0.5;
+}
+
+@media (max-width: 700px) {
+    .gh-card-link {
+        flex-direction: column;
+    }
+
+    .gh-card-image {
+        width: 100%;
+        height: auto;
+        margin: 0 0 4vw 0;
+    }
+
+    .gh-card-content {
+        font-size: 1.6rem;
+    }
+
+    .gh-card.no-image {
+        padding-right: 0;
+    }
+
 }
 
 
