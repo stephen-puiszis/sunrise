@@ -4,15 +4,13 @@
     <div class="gh-container">
 
         {{#tag}}
-        <header class="gh-page-head">
-
+        <header class="gh-page-head gh-page-tag">
+            <p>Tag:</p>
             <h1>{{name}}</h1>
-
+            <p>{{plural ../pagination.total empty='posts' singular='% post' plural='% posts'}}</p>
             <p>
                 {{#if description}}
                     {{description}}
-                {{else}}
-                    A collection of {{plural ../pagination.total empty='posts' singular='% post' plural='% posts'}}
                 {{/if}}
             </p>
 
