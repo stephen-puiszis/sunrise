@@ -1,0 +1,35 @@
+{{!< default}} {{#post}} <article class="gh-article {{post_class}}">
+
+  <header class="gh-header gh-canvas">
+    <h1 class="gh-title">{{title}}</h1>
+  </header>
+
+  <div class="gh-content gh-canvas">
+
+    {{content}}
+
+    <form action="https://formspree.io/f/mbjppwbl" method="POST">
+      <div class="gh-input-group">
+        <label for="Full Name">Full Name:</label>
+        <input class="gh-input" type="text" name="Full Name" placeholder="John Jameson" required>
+      </div>
+
+      <div class="gh-input-group">
+        <label for="Email">Email:</label>
+        <input class="gh-input" type="text" name="Email" placeholder="john@jameson.com" required>
+      </div>
+
+      <div class="gh-input-group">
+        <label>Message:</label>
+        <textarea class="gh-textarea" name="message" rows="5" placeholder="Yo!" required></textarea>
+      </div>
+
+      <div class="gh-input-group">
+        <button class="gh-button gh-button-primary" type="submit">Send Email</button>
+      </div>
+    </form>
+
+  </div>
+
+  </article>
+  {{/post}}

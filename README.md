@@ -43,6 +43,12 @@ Adding a `page-<slug>.hbs` template in the root folder will route anything from
 Ghost will need a page created in the admin interface with that slug for this to work,
 and you'll need to restart your server after creating the template.
 
+### Forms
+
+Email subscription form is handled via Mailchimp.
+
+Contact Us form is handled via Formspree.
+
 #### SVG Icons
 
 Makes use of [Simple Icons](https://simpleicons.org/) and [Apple SF Symbols](https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overview/).
