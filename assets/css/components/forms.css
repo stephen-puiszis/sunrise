@@ -1,6 +1,15 @@
 /* Forms
 /* ---------------------------------------------------------- */
 
+#mc_embed_signup {
+    clear: left;
+    margin-bottom: 5vmin;
+}
+
+#mc_embed_signup_scroll > input[type=submit] {
+    margin-top: 3vmin;
+}
+
 .gh-input,
 .gh-textarea {
     background: var(--color-bg);

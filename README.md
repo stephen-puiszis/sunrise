@@ -35,6 +35,14 @@ Ghost template configuration sucks. The variables defined in package.json get fi
 I haven't found a way to quickly inject variables from the admin interface so there is some hardcoded
 content throughout.
 
+### Custom Pages
+
+Adding a `page-<slug>.hbs` template in the root folder will route anything from
+`/slug/` to that custom template.
+
+Ghost will need a page created in the admin interface with that slug for this to work,
+and you'll need to restart your server after creating the template.
+
 #### SVG Icons
 
 Makes use of [Simple Icons](https://simpleicons.org/) and [Apple SF Symbols](https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overview/).
