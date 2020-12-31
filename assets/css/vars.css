@@ -6,8 +6,9 @@
     --color-white: #ffffff;
     --color-black: #000000;
     --color-grey: #ddd;
+    --color-dark-grey: #464646;
 
-    --color-primary: #3eb0ef;
+    --color-primary: #191E73;
     --color-base: #131313;
     --color-border: var(--color-grey);
     --color-bg: #f5f5f5;
