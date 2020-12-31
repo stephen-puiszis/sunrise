@@ -1,4 +1,11 @@
 # Sunrise Ghost Theme
+
+### Remaining Todos
+
+- Add a welcome or intro panel to the homepage
+- Add a categories page
+- Add tags to each post page
+- Add search
 # Development
 
 Styles are compiled using Gulp/PostCSS to polyfill future CSS spec. You'll need [Node](https://nodejs.org/), [Yarn](https://yarnpkg.com/) and [Gulp](https://gulpjs.com) installed globally. After that, from the theme's root directory:
@@ -83,3 +90,15 @@ One neat trick is that you can also create custom one-off templates just by addi
 - `author-ali.hbs` - Custom template for `/author/ali/` archive
 
 &nbsp;
+
+
+### Search Functionality
+
+https://github.com/TryGhost/Dawn/blob/master/assets/js/lib/elasticlunr.min.js
+
+https://github.com/TryGhost/Dawn/blob/master/assets/js/main.js#L314
+
+https://forum.ghost.org/t/expand-search-on-dawn-to-include-pages/18846
+
+https://forum.ghost.org/t/dawn-theme-dawn-search-index-error/18099
+
