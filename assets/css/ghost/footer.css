@@ -30,7 +30,7 @@
 
 .gh-foot-menu {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
 }
 
 .gh-foot-menu .nav {
