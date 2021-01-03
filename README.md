@@ -26,7 +26,10 @@ The `zip` Gulp task packages the theme files into `dist/<theme-name>.zip`, which
 yarn zip
 ```
 
-### Local Ghost Server Setup for Development
+### Local Server Setup for Development
+
+Follow [this guide](https://nicogreve.de/developing-themes-for-ghost/) to setup
+LiveReload to make it easier to develop a theme locally.
 
 Follow the [official Ghost local installation guide](https://ghost.org/docs/install/local/) to install Ghost.
 
@@ -66,7 +69,6 @@ Makes use of [Simple Icons](https://simpleicons.org/) and [Apple SF Symbols](htt
 - [Color Mod](https://github.com/jonathantneal/postcss-color-mod-function)
 
 &nbsp;
-
 
 # Boilerplate Ghost Content
 
