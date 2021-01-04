@@ -30,6 +30,9 @@ yarn zip
 Follow [this guide](https://nicogreve.de/developing-themes-for-ghost/) to setup
 LiveReload to make it easier to develop a theme locally.
 
+Make sure to symlink the theme in development `ln -s ~/Documents/sunrise ./sunrise`
+within the installed Ghost theme directory.
+
 Follow the [official Ghost local installation guide](https://ghost.org/docs/install/local/) to install Ghost.
 
 Run `ghost start` to start the local Ghost instance that will be available at http://localhost:2368
