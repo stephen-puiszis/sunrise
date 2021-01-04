@@ -3,8 +3,7 @@
 ### Remaining Todos
 
 - Add a welcome or intro panel to the homepage
-- Add a categories page
-- Add tags to each post page
+- Add a categories (tag list) page
 - Add search
 # Development
 

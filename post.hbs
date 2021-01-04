@@ -8,6 +8,12 @@
         <span class="gh-post-meta"><time datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMM YYYY"}}</time> <span class="bull">&bull;</span> {{reading_time}}</span>
         <h1 class="gh-title">{{title}}</h1>
 
+        {{#if tags}}
+            <span class="gh-post-meta gh-post-meta-footer">
+                <span>{{tags separator=" &bull; " }}</span>
+            </span>
+        {{/if}}
+
         {{#if custom_excerpt}}
         <p class="gh-excerpt">{{custom_excerpt}}</p>
         {{/if}}

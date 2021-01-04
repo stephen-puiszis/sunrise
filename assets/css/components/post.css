@@ -15,6 +15,10 @@
     opacity: 0.8;
 }
 
+.gh-post-meta-footer {
+    margin: 1rem 0 0 0;
+}
+
 .gh-excerpt {
     margin: 1rem 0 0 0;
     font: var(--font-sans-serif);
