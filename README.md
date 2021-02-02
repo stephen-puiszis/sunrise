@@ -106,3 +106,7 @@ https://forum.ghost.org/t/expand-search-on-dawn-to-include-pages/18846
 
 https://forum.ghost.org/t/dawn-theme-dawn-search-index-error/18099
 
+
+#### Extra notes to show the PR example
+
+This is some shitty writing for a live demo. Bananna. There are typos. Soo many.
