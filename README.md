@@ -43,9 +43,7 @@ Run `ghost run --development` to tail the logs of the running Ghost instance.
 
 ### Configuration
 
-Ghost template configuration sucks. The variables defined in package.json get filtered out, and
-I haven't found a way to quickly inject variables from the admin interface so there is some hardcoded
-content throughout.
+Ghost template configuration sucks. The variables defined in package.json get filtered out, and I haven't found a way to quickly inject variables from the admin interface so there is some hardcoded content throughout.
 
 ### Custom Pages
 
@@ -105,4 +103,3 @@ https://github.com/TryGhost/Dawn/blob/master/assets/js/main.js#L314
 https://forum.ghost.org/t/expand-search-on-dawn-to-include-pages/18846
 
 https://forum.ghost.org/t/dawn-theme-dawn-search-index-error/18099
-
