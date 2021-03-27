@@ -59,6 +59,10 @@ Email subscription form is handled via Mailchimp.
 
 Contact Us form is handled via Formspree.
 
+### Images
+
+Images should be resized before uploading to be a 16:9 aspect ratio (1080p)
+
 #### SVG Icons
 
 Makes use of [Simple Icons](https://simpleicons.org/) and [Apple SF Symbols](https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overview/).
