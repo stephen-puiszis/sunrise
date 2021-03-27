@@ -7,7 +7,10 @@
 - Add search
 # Development
 
-Styles are compiled using Gulp/PostCSS to polyfill future CSS spec. You'll need [Node](https://nodejs.org/), [Yarn](https://yarnpkg.com/) and [Gulp](https://gulpjs.com) installed globally. After that, from the theme's root directory:
+Styles are compiled using Gulp/PostCSS to polyfill future CSS spec.
+You'll need [Node](https://nodejs.org/), [Yarn](https://yarnpkg.com/) and
+[Gulp](https://gulpjs.com) installed globally. After that, from the theme's
+root directory:
 
 ```bash
 # Install
@@ -17,9 +20,16 @@ yarn
 yarn dev
 ```
 
-Now you can edit `/assets/css/` files, which will be compiled to `/assets/built/` automatically.
+Now you can edit `/assets/css/` files, which will be compiled to `/assets/built/`
+automatically. Adding new files will require you to restart your local ghost
+server.
 
-The `zip` Gulp task packages the theme files into `dist/<theme-name>.zip`, which you can then upload to your site.
+### Deployment
+
+First, have gscan validate the template before zipping it: `yarn test`
+
+Once validated, the `zip` Gulp task packages the theme files into
+`dist/<theme-name>.zip`, which you can then upload to your site.
 
 ```bash
 yarn zip
@@ -39,13 +49,18 @@ Run `ghost start` to start the local Ghost instance that will be available at ht
 
 Run `ghost run --development` to tail the logs of the running Ghost instance.
 
+If you cannot access the admin panel, it's probably easiest to uninstall your
+local Ghost instance and start again (don't forget to back-up everything):
+`ghost unsintall`
+
+
 &nbsp;
 
 ### Configuration
 
-Ghost template configuration sucks. The variables defined in package.json get filtered out, and
-I haven't found a way to quickly inject variables from the admin interface so there is some hardcoded
-content throughout.
+Ghost template configuration sucks. The variables defined in package.json get
+filtered out, and I haven't found a way to quickly inject variables from the
+admin interface so there is some hardcoded content throughout.
 
 ### Custom Pages
 
@@ -61,9 +76,14 @@ Email subscription form is handled via Mailchimp.
 
 Contact Us form is handled via Formspree.
 
+### Images
+
+Images should be resized before uploading to be a 16:9 aspect ratio (1080p)
+
 #### SVG Icons
 
-Makes use of [Simple Icons](https://simpleicons.org/) and [Apple SF Symbols](https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overview/).
+Makes use of [Simple Icons](https://simpleicons.org/) and
+[Apple SF Symbols](https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overview/).
 
 ####  PostCSS Features Used
 
@@ -105,4 +125,3 @@ https://github.com/TryGhost/Dawn/blob/master/assets/js/main.js#L314
 https://forum.ghost.org/t/expand-search-on-dawn-to-include-pages/18846
 
 https://forum.ghost.org/t/dawn-theme-dawn-search-index-error/18099
-
