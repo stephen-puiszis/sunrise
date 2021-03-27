@@ -3,8 +3,8 @@
     "description": "A customized ghost starter theme",
     "version": "1.0.0",
     "engines": {
-        "ghost": ">=3.0.0",
-        "ghost-api": "v3"
+        "ghost": ">=4.0.0",
+        "ghost-api": "v4"
     },
     "license": "MIT",
     "screenshots": {
@@ -45,7 +45,7 @@
     "devDependencies": {
         "autoprefixer": "9.8.3",
         "cssnano": "4.1.10",
-        "gscan": "3.5.4",
+        "gscan": "4.0.0",
         "gulp": "4.0.2",
         "gulp-livereload": "4.0.2",
         "gulp-postcss": "8.0.0",
