@@ -1,5 +1,7 @@
 {{!< ../default}}
 
+{{#get "tiers"}}
+
 <div class="gh-page">
     <div class="gh-container">
 
@@ -18,7 +20,7 @@
                 <div class="gh-checkout-plan">
                     <header class="gh-checkout-plan-header">
                         <h3>Monthly</h3>
-                        <span>$</span><strong>{{@price.monthly}}</strong> / month
+                        <span>$</span><strong>{{price monthly_price currency=currency}}</strong> / month
                     </header>
                     <div class="gh-checkout-plan-content">
                         <ul>
@@ -33,7 +35,7 @@
                 <div class="gh-checkout-plan">
                     <header class="gh-checkout-plan-header">
                         <h3>Yearly</h3>
-                        <span>$</span><strong>{{@price.yearly}}</strong> / year
+                        <span>$</span><strong>{{price yearly_price currency=currency}}</strong> / year
                     </header>
                     <div class="gh-checkout-plan-content">
                         <ul>
@@ -71,3 +73,4 @@
 
     </div>
 </div>
+{{/get}}
