@@ -20,7 +20,7 @@
         "ship": "STATUS=$(git status --porcelain); echo $STATUS; if [ -z \"$STATUS\" ]; then yarn version && git push --follow-tags; fi"
     },
     "author": {
-        "name": "Stpehen Puiszis",
+        "name": "Stephen Puiszis",
         "email": "spuiszis@gmail.com",
         "url": "https://stephen.fm"
     },
