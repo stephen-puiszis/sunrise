@@ -1,7 +1,7 @@
 {
     "name": "sunrise",
     "description": "A customized ghost starter theme",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "engines": {
         "ghost": ">=4.0.0",
         "ghost-api": "v4"

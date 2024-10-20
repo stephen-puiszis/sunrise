@@ -5,6 +5,7 @@
 - Add a welcome or intro panel to the homepage
 - Add a categories (tag list) page
 - Add search
+
 # Development
 
 Styles are compiled using Gulp/PostCSS to polyfill future CSS spec.
