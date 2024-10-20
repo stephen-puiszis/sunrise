@@ -1,7 +1,7 @@
 {
     "name": "sunrise",
     "description": "A customized ghost starter theme",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "engines": {
         "ghost": ">=4.0.0",
         "ghost-api": "v4"
@@ -20,7 +20,7 @@
         "ship": "STATUS=$(git status --porcelain); echo $STATUS; if [ -z \"$STATUS\" ]; then yarn version && git push --follow-tags; fi"
     },
     "author": {
-        "name": "Stpehen Puiszis",
+        "name": "Stephen Puiszis",
         "email": "spuiszis@gmail.com",
         "url": "https://stephen.fm"
     },
